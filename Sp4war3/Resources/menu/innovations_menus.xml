@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+  <item
+       android:id="@+id/menu_contactAssistant"
+       android:icon="@drawable/ic_menu_contactAssistant"
+       android:showAsAction="always"
+       android:title="Contact Assistant" />
+  <item
+       android:id="@+id/menu_voiceGuidedDeposits"
+       android:icon="@drawable/ic_menu_voiceGuidedDeposits"
+       android:showAsAction="always"
+       android:title="Voice Guided Deposits" />
+  <item
+       android:id="@+id/menu_innovations"
+       android:icon="@drawable/ic_menu_innovation"
+       android:showAsAction="ifRoom"
+       android:title="Featured Innovations" />
+</menu>

@@ -1,0 +1,27 @@
+//toolbar.MenuItemClick += (sender, e) =>
+            //{
+            //    var submitFeedback = new Intent(this, typeof(Feedback));
+            //    //Identify which menu item has been clicked.
+            //    //Note that menu items appear as icons on the UI
+            //    if (toolbar.Is
+            //    {
+
+            //    }
+            //    StartActivity(submitFeedback);
+            //};
+
+//Belows seems to work but having a problem calling it in toolbar.MenuItemClick
+public override bool OnOptionsItemSelected(IMenuItem item)
+        {
+            var submitFeedback = new Intent(this, typeof(Feedback));
+            Type thing = item.GetType();
+
+            string id = Convert.ToString(item.ItemId);
+
+            switch (id)
+            {
+                case ("menu_feedback"):
+                    StartActivity(submitFeedback);
+                    return true;
+            }
+            return base.OnOptionsItemSelected(item);

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/main_content"
+        android:layout_below="@id/toolbar">
+      <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/welcomeText"
+            android:text="Welcome to SparkWare. Discover, participate and provide feedback on our latest innovations.
+            Sparkware provides members the opportunity to engage and provide feedback on new innovations, concepts, and exclusive pilots.
+            We put you, the innovator, at the forefront of innovation by providing a vibrant community where members can innovate for members."
+            android:background="@drawable/wave" />
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+        <Toolbar
+            android:id="@+id/innovation_toolbar"
+            android:minHeight="?android:attr/actionBarSize"
+            android:background="?android:attr/colorAccent"
+            android:theme="@android:style/ThemeOverlay.Material.Dark.ActionBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>
